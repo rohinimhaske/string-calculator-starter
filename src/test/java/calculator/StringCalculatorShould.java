@@ -19,14 +19,20 @@ class StringCalculatorShould {
     }
 
     @Test
-	void string_with_comma_delimiter_should_return_sum() {
-		StringCalculator stringCalculator = new StringCalculator();
-		assertEquals(3, stringCalculator.add("1,2"));
-	}
+    void string_with_comma_delimiter_should_return_sum() {
+        StringCalculator stringCalculator = new StringCalculator();
+	assertEquals(3, stringCalculator.add("1,2"));
+    }
 
-	@Test
-	void string_with_comma_delimiter_with_unknown_amount_numbers_should_return_sum() {
-		StringCalculator stringCalculator = new StringCalculator();
-		assertEquals(45, stringCalculator.add("1,2,3,4,5,6,7,8,9"));
-	}
+   @Test
+   void string_with_comma_delimiter_with_unknown_amount_numbers_should_return_sum() {
+	StringCalculator stringCalculator = new StringCalculator();
+        assertEquals(45, stringCalculator.add("1,2,3,4,5,6,7,8,9"));
+   }
+
+   @Test
+   void string_with_new_lines_should_return_sum() {
+	StringCalculator stringCalculator = new StringCalculator();
+	assertEquals(6, stringCalculator.add("1\n2,3"));
+   }
 }
