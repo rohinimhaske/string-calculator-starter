@@ -97,4 +97,14 @@ class StringCalculatorShould {
 			e.printStackTrace();
 		}
 	}
+
+	@Test
+	void string_with_any_lenght_delimiter_should_return_sum() {
+		StringCalculator stringCalculator = new StringCalculator();
+		try {
+			assertEquals(6, stringCalculator.add("//[***]\n1***2***3"));
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+	}
 }
