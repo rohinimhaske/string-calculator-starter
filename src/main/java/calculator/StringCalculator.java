@@ -14,9 +14,9 @@ class StringCalculator {
 		for (String num : numbers) {
 			try {
 				int number = Integer.parseInt(num);
-				if (number >= 0) {
+				if (number >= 0 && number <= 1000) {
 					sum = sum + number;
-				} else {
+				} else if (number < 0) {
 					negativeNumbers.add(number);
 				}
 			} catch (NumberFormatException nfe) {
