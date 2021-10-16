@@ -8,7 +8,7 @@ class StringCalculator {
 			return 0;
 		}
 
-		String[] numbers = input.split(",");
+		String[] numbers = input.split(regex);
 		int sum = 0;
 		for (String num : numbers) {
 			sum = sum + Integer.parseInt(num);
