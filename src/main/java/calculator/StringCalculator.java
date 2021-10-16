@@ -3,7 +3,7 @@ package calculator;
 class StringCalculator {
     private static final String regex = "[\n,;]";
 
-    public static int add(String input) throws Exception {
+    public int add(String input) throws Exception {
 		if (input.isEmpty()) {
 			return 0;
 		}
