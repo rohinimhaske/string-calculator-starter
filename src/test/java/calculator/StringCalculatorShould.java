@@ -88,4 +88,13 @@ class StringCalculatorShould {
 		}
 	}
 
+	@Test
+	void string_with_number_bigger_than_1000_should_be_ignored() {
+		StringCalculator stringCalculator = new StringCalculator();
+		try {
+			assertEquals(2, stringCalculator.add("//;\n1005;2"));
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+	}
 }
