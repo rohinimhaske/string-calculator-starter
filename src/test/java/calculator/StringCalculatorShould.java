@@ -117,4 +117,14 @@ class StringCalculatorShould {
 			e.printStackTrace();
 		}
 	}
+
+	@Test
+	void string_with_multiple_delimiter_with_length_longer_than_one_should_return_sum() {
+		StringCalculator stringCalculator = new StringCalculator();
+		try {
+			assertEquals(6, stringCalculator.add("//[{**][[%%%]]]\n1***2%%%%3"));
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+	}
 }
