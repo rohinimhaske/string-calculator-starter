@@ -1,7 +1,7 @@
 package calculator;
 
 class StringCalculator {
-    private static final String regex = "[\n,;]";
+    private static final String regex = "[\n,;*]";
 
     public int add(String input) throws Exception {
 		if (input.isEmpty()) {
