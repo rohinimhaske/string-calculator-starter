@@ -127,4 +127,14 @@ class StringCalculatorShould {
 			e.printStackTrace();
 		}
 	}
+	
+	@Test
+	void string_with_consecutive_numbers_should_return_sum() {
+		StringCalculator stringCalculator = new StringCalculator();
+		try {
+			assertEquals(42, stringCalculator.add("1,2,3,6,6,6,4,5,6"));
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+	}
 }
